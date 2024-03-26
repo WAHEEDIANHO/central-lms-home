@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Central LMS e-Learning Hub</title>
+  <meta name="description" content="Central LMS e-Learning Hub" />
+  <meta name="keywords" content="Central LMS" />
+  <meta name="author" content="CENTRAL LMS SYSTEMS - KODEK INNOVATIONS v2.5"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central LMS e.Learning Hub</title>
+
+<!--  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">-->
+  <link rel="icon" type="image/x-icon" href="https://centrallms.com/globals/assets/img/central-favicon.png"/>
+  <!--- End favicon-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+  <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <style>
+    .mo-h2 {
+        font-size: 55px !important;
+    }
+    .h1, h1 {
+      letter-spacing: 0 !important;
+    }
+    .small, small {
+      font-size: .57em;
+    }
+    .slider-text {
+      font-size: 28px !important;
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+    .card-icon {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  </style>
+</head>
+
+<body class="light">
+
+  <div class="zubuz-preloader-wrap">
+    <div class="zubuz-preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+<!--  All modal to be display in the code-->
+
+  <!-- Modal -->
+  <div class="modal" id="signupForm" data-bs-backdrop="static" tabindex="-1" aria-labelledby="signupFormLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupFormLabel">Sign up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <form>
+             <div class="row">
+               <div class="col-lg-12">
+                 <div class="mb-3">
+                   <label for="fname" class="form-label small">Organization Name:</label>
+                   <input type="text" class="form-control  p-2 px-4" id="fname">
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-lg-6">
+                 <div class="mb-3">
+                   <label for="phoneNumber" class="form-label small">Phone Number:</label>
+                   <input type="text" class="form-control  p-2 px-4" id="phoneNumber">
+                 </div>
+               </div>
+               <div class="col-lg-6">
+                 <div class="mb-3">
+                   <label for="email" class="form-label small">E-mail:</label>
+                   <input type="email" class="form-control  p-2 px-4" id="email">
+                 </div>
+               </div>
+             </div>
+             <div class="row">
+               <div class="col-lg-6">
+                 <div class="mb-3">
+                   <label for="purpose" class="form-label small">Purpose of the demo:</label>
+                   <input type="text" class="form-control  p-2 px-4" id="purpose">
+                 </div>
+               </div>
+               <div class="col-lg-6">
+                 <div class="mb-3">
+                   <label for="prefer" class="form-label small">Preferred date:</label>
+                   <input type="date" class="form-control  p-2 px-4" id="prefer">
+                 </div>
+               </div>
+             </div>
+             <div class="">
+                  <p for="duration" class="form-label small">How long would you like your demo to be?:</p>
+                  <div>
+                    <input id="intro" type="checkbox" class="" name="duration">
+                    <label for="intro" class="small">15-Minute intro call</label>
+                  </div>
+                  <div>
+                    <input id="screenShare" type="checkbox" class="" name="duration">
+                    <label for="screenShare" class="small">30- Minute Screen Share overview</label>
+                  </div>
+                  <div>
+                    <input id="depeerDive" type="checkbox" class="" name="duration">
+                    <label for="depeerDive" class="small">45- Minute in-depth deeper dive</label>
+                  </div>
+                </div>
+              <div>
+                <label for="specific" class="small">Any specific features or aspects you'd like to focus on during the demo</label>
+                <textarea id="specific" class="form-control" rows="2"></textarea>
+              </div>
+              <div>
+                <label for="question" class="small">Any questions or concerns you have</label>
+                <textarea id="question" class="form-control" rows="2"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-sm p-0" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success btn-sm p-0">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  End -->
+
+
+
+  <header class="site-header zubuz-header-section" id="sticky-menu">
+    <div class="container">
+      <nav class="navbar site-navbar">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+          <a href="index.html">
+            <img style="width: 175px;" src="https://centrallms.com/globals/assets/img/logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="menu-block-wrapper">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block" id="append-menu-header">
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="site-menu-main">
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Demo <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-1">
+                  <li class="sub-menu--item">
+                    <a href="index.html">
+                      <span class="menu-item-text">Finance App</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="index.html">
+                      <span class="menu-item-text">CRM Platform</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="index-03.html">
+                      <span class="menu-item-text">SaaS Startups</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="about-us.html" class="nav-link-item">About Us</a>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-2">
+                  <li class="sub-menu--item">
+                    <a href="about-us.html">
+                      <span class="menu-item-text">About Us</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="pricing.html">
+                      <span class="menu-item-text">Pricing</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">blog <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu shape-none" id="submenu-3">
+                      <li class="sub-menu--item">
+                        <a href="blog.html">
+                          <span class="menu-item-text">Our Blog</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="blog-column-one.html">
+                          <span class="menu-item-text">blog column one</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="blog-column-two.html">
+                          <span class="menu-item-text">blog column two</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-blog.html">
+                          <span class="menu-item-text">blog details</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Service<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-4">
+                      <li class="sub-menu--item">
+                        <a href="service.html">
+                          <span class="menu-item-text">service</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-service.html">
+                          <span class="menu-item-text">service details</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Team<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-5">
+                      <li class="sub-menu--item">
+                        <a href="team.html">
+                          <span class="menu-item-text">team</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-team.html">
+                          <span class="menu-item-text">team details</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Career<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-6">
+                      <li class="sub-menu--item">
+                        <a href="career.html">
+                          <span class="menu-item-text">Career</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-career.html">
+                          <span class="menu-item-text">Career details</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Portfolio<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-7">
+                      <li class="sub-menu--item">
+                        <a href="portfolio-grid.html">
+                          <span class="menu-item-text">portfolio gird</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="portfolio-classic.html">
+                          <span class="menu-item-text">portfolio classic</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="single-portfolio.html">
+                          <span class="menu-item-text">Single Portfolio</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-8">
+                      <li class="sub-menu--item">
+                        <a href="faq.html">
+                          <span class="menu-item-text">faq</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="errors-404.html">
+                          <span class="menu-item-text">Error 404</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="integrations.html">
+                          <span class="menu-item-text">integrations</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="testimonials.html">
+                          <span class="menu-item-text">testimonials</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="coming-soon.html">
+                          <span class="menu-item-text">Coming Soon</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Account<i class="fas fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-menu shape-none" id="submenu-9">
+                      <li class="sub-menu--item">
+                        <a href="sign-up.html">
+                          <span class="menu-item-text">sign up</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="sign-in.html">
+                          <span class="menu-item-text">sign in</span>
+                        </a>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="reset-password.html">
+                          <span class="menu-item-text">reset password</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-item-has-children">
+                <a href="#" class="nav-link-item drop-trigger">Blog <i class="fas fa-angle-down"></i></a>
+                <ul class="sub-menu" id="submenu-10">
+                  <li class="sub-menu--item">
+                    <a href="blog.html">
+                      <span class="menu-item-text">Our Blog</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="blog-column-one.html">
+                      <span class="menu-item-text">blog column one</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="blog-column-two.html">
+                      <span class="menu-item-text">blog column two</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="single-blog.html">
+                      <span class="menu-item-text">blog details</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="contact-us.html" class="nav-link-item">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+          <div class="zubuz-header-btn-wrap">
+            <a class="zubuz-login-btn" href="sign-up.html">Login</a>
+          </div>
+          <button
+                  style="background-color: #ABFB4F"
+                  class="btn btn-outline-light rounded-pill px-5 py-4 text-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signupForm"
+          >
+            <span>Get Started</span>
+          </button>
+
+        </div>
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger light">
+          <span></span>
+        </div>
+        <!--/.Mobile Menu Hamburger Ends-->
+      </nav>
+    </div>
+  </header>
+  <!--End landex-header-section -->
+
+<!--  start-->
+  <div class="zubuz-hero-section2">
+    <div class="container">
+      <div class="row zubuz_screenfix_right">
+        <div class="col-lg-6">
+          <div class="zubuz-hero-content">
+            <h2>Promote group and individual learning culture in your organization</h2>
+            <p class="mt-4">Develop employees’ skills and boost business performance through the provision of all-round access to learning resources.</p>
+            <div class="zubuz-hero-btn-wrap">
+              <button
+                      style="background-color: #ABFB4F"
+                      class="btn btn-outline-light rounded-pill px-5 py-4 text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signupForm"
+              >
+                <span>Sign up for free</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="zubuz-hero-thumb2">
+            <img src="assets/images/v2/dashboard.png" alt="">
+            <div class="zubuz-hero-shape2">
+              <img src="assets/images/v2/shape1-v2.png" alt="">
+            </div>
+            <div class="zubuz-hero-shape3">
+              <img src="assets/images/v2/shape2-v2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="zubuz-brand-logo-section">
+    <div class="container">
+      <div class="zubuz-brand-logo-wrap">
+        <p>Trusted by the most innovative companies worldwide</p>
+        <div class="zubuz-brand-slider3">
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_1.png" alt="">
+          </div>
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_2.png" alt="">
+          </div>
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_3.png" alt="">
+          </div>
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_4.png" alt="">
+          </div>
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_5.png" alt="">
+          </div>
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_1.png" alt="">
+          </div>
+          <div class="zubuz-brand-item">
+            <img src="assets/images/v2/b_v2_2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  <div class="section zubuz-section-padding3">
+    <div class="container">
+      <div class="zubuz-section-title center">
+        <h2>Benefits and applications to your organization</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="zubuz-iconbox-wrap2">
+            <div class="zubuz-iconbox-icon">
+              <img src="assets/images/v2/icon-v2-3.png" alt="">
+            </div>
+            <div class="zubuz-iconbox-data">
+              <h3>Cut down on training cost:</h3>
+              <p>Streamline your training processes; employees can access training modules anytime,
+                anywhere, minimizing the expenses a
+                sociated with in-person training sessions and printed materials.</p>
+            </div>
+            <div class="zubuz-iconbox-thumb">
+              <img src="assets/images/v2/card-v2-1.png" alt="">
+            </div>
+          </div>
+          <div class="zubuz-iconbox-wrap2">
+            <div class="zubuz-iconbox-icon">
+              <img src="assets/images/v2/icon-v2-2.png" alt="">
+            </div>
+            <div class="zubuz-iconbox-data">
+              <h3>Flexible licence model:</h3>
+              <p>Site license or per user license, Central LMS supports both. The choice is simply yours to make.</p>
+            </div>
+            <div class="zubuz-iconbox-thumb">
+              <img src="assets/images/v2/card-v2-3.png" alt="">
+            </div>
+          </div>
+          <div class="zubuz-iconbox-wrap2">
+            <div class="zubuz-iconbox-icon">
+              <img src="assets/images/v2/icon-v2-2.png" alt="">
+            </div>
+            <div class="zubuz-iconbox-data">
+              <h3>Recruitment tests:</h3>
+              <p>Use Central LMS to evaluate candidates' competencies accurately and efficiently, ensuring that only
+                the most qualified individuals progress through the hiring process.</p>
+            </div>
+            <div class="zubuz-iconbox-thumb">
+              <img src="assets/images/v2/card-v2-3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="zubuz-iconbox-wrap2">
+            <div class="zubuz-iconbox-icon">
+              <img src="assets/images/v2/icon-v2-2.png" alt="">
+            </div>
+            <div class="zubuz-iconbox-data">
+              <h3>Employee Onboarding:</h3>
+              <p>Eliminate cumbersome paper-based documentation and lengthy orientation sessions. Enable new hires
+                ccess training materials, company policies, and essential resources from a single platform.</p>
+            </div>
+            <div class="zubuz-iconbox-thumb">
+              <img src="assets/images/v2/card-v2-2.png" alt="">
+            </div>
+          </div>
+          <div class="zubuz-iconbox-wrap2">
+            <div class="zubuz-iconbox-icon">
+              <img src="assets/images/v2/icon-v2-4.png" alt="">
+            </div>
+            <div class="zubuz-iconbox-data">
+              <h3>Multi-user category support:</h3>
+              <p>Train core staff, contract/adhoc staff, agents, contractors or customers with a single instance of Central LMS..</p>
+            </div>
+            <div class="zubuz-iconbox-thumb">
+              <img src="assets/images/v2/card-v2-4.png" alt="">
+            </div>
+          </div>
+          <div class="zubuz-iconbox-wrap2">
+            <div class="zubuz-iconbox-icon">
+              <img src="assets/images/v2/icon-v2-4.png" alt="">
+            </div>
+            <div class="zubuz-iconbox-data">
+              <h3>Improved level of job performance:</h3>
+              <p>Better trained employees perform better at their job.</p>
+            </div>
+            <div class="zubuz-iconbox-thumb">
+              <img src="assets/images/v2/card-v2-4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Section -->s
+  <div class="section zubuz-section-padding2">
+    <div id="zubuz-counter"></div>
+    <div class="container zubuz-brand-logo-wrap">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="zubuz-v2-thumb thumb-mr">
+            <img src="assets/images/v2/thumb-v2-1.png" alt="">
+            <div class="zubuz-v2-thumb-shape">
+              <img src="assets/images/v2/shape3-v2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="zubuz-default-content">
+            <h2 class="mo-h2">Take learning further with</h2>
+            <h2 class="mo-h2">Central mobile app</h2>
+            <p class="text-start fw-bold mb-3">
+              Give your learners on-the-go access to learning with Central Mobile App.
+            </p>
+            <p class="text-start">Whether on Central LMS or Central Mobile, learners can take training, assessments, stay up-dated on
+              company policies, compliance and other training needs right from their mobile device - on virtually any
+              smart phone or tablet.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End section -->
+  <div class="section zubuz-section-padding5 ">
+    <div class="container pt-5">
+      <div class="zubuz-section-title center">
+        <h2 class="mo-h2">Features and Capabilities</h2>
+        <p style="font-size: 25px" class="mt-5">Central LMS offers you much more than LMS; it has been carefully designed to form an integral part of
+          your organization’s learning and development strategic tools.</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5 order-lg-2">
+          <div class="zubuz-v2-thumb thumb-ml">
+            <img src="assets/images/v2/thumb-v2-2.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="zubuz-default-content">
+
+            <div class="zubuz-extara-mt">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Modern, easy to use interface</span>
+                      <p class="small">Responsive and accessible - the interface is easy to navigate on all devices.</p>
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>White-labelling</span>
+                      <p class="small">Brand and customize the LMS to reflect your organization’s brand.</p>
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Completion certificate</span>
+                      <p class="small">Automatic course completion certificate upon completing a course with options to print or download.</p>
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Support for multiple eLearning standards</span>
+                      <p class="small">Conforms to global eLearning Industry Standards. Accepts all SCORM and AICC courses irrespective
+                        of course manufacturer/developer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Competency based performance</span>
+                      <p class="small">Set up competencies with personal learning plans across courses and activities.</p>
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Collaborative tools and activities</span>
+                      <p class="small">Work and learn together in forums, chats and wikis.</p>
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Gamification</span>
+                      <p class="small">Motivate learners and reward participation and achievement with customized badges and points.</p>
+                      <button
+                              style="background-color: #ABFB4F"
+                              class="btn text-dark btn-lg"
+                              data-bs-toggle="modal"
+                              data-bs-target="#signupForm"
+                      >
+                        Access all features
+                      </button>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+  <div class="section zubuz-section-padding2">
+    <div id="zubuz-counter"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="zubuz-v2-thumb thumb-mr">
+            <img src="assets/images/v2/thumb-v2-1.png" alt="">
+            <div class="zubuz-v2-thumb-shape">
+              <img src="assets/images/v2/shape3-v2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="zubuz-default-content">
+            <h2 class="mo-h2">Integration Capabilities</h2>
+<!--            <p>Achieve much more by integrating Central LMS with other applications in your organization.</p>-->
+            <div class="zubuz-extara-mt">
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Import staff information.</span>
+<!--                      <p class="small">Responsive and accessible - the interface is easy to navigate on all devices.</p>-->
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Share staff training data with other HR Systems or any other system.</span>
+<!--                      <p class="small">Brand and customize the LMS to reflect your organization’s brand.</p>-->
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Maintain single-sign-on.</span>
+<!--                      <p class="small">Automatic course completion certificate upon completing a course with options to print or download.</p>-->
+                    </div>
+                  </div>
+                  <div class="zubuz-iconbox-wrap-left">
+                    <div class="zubuz-iconbox-icon none-bg">
+                      <img src="assets/images/v2/check.png" alt="">
+                    </div>
+                    <div class="zubuz-iconbox-data">
+                      <span>Receive payments for courses.</span>
+<!--                      <p class="small">Conforms to global eLearning Industry Standards. Accepts all SCORM and AICC courses irrespective-->
+<!--                        of course manufacturer/developer.</p>-->
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section zubuz-section-padding3 bg-light">
+    <div id="zubuz-counter"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="zubuz-v2-thumb thumb-mr">
+            <h2 class="mo-h2" style="line-height: 60px;">Central LMS offers flexible deployment options</h2>
+            <div class="zubuz-v2-thumb-shape">
+              <img src="assets/images/v2/shape3-v2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="zubuz-default-content">
+            <div class="position-relative border-0 p-5 card shadow" style="margin-bottom: 60px">
+             <div style="z-index: 100" class="position-relative">
+               <p class="fw-bold">On-site/on-premises Deployment</p>
+               <p>Deploy Central LMS directly onto your domain using your current IT infrastructure, eliminating the need
+                 for extra hardware costs.</p>
+             </div>
+              <img style="z-index: 1" src="https://tse4.mm.bing.net/th/id/OIP.dEEntwA11TMTNJizJ0StLAHaHa?rs=1&pid=ImgDetMain" class="position-absolute card-icon">
+            </div>
+            <div class="my-5 position-relative border-0 p-5 card shadow" style="margin-bottom: 60px">
+              <div style="z-index: 100" class="position-relative">
+                <p class="fw-bold">Cloud-Based Deployment (Software-as-a-Service)</p>
+                <p>No need for IT infrastructure. Access the Central LMS online seamlessly through a secure, customized,
+                  and dedicated URL.</p>
+              </div>
+
+              <img style="z-index: 1" src="https://tse4.mm.bing.net/th/id/OIP.dEEntwA11TMTNJizJ0StLAHaHa?rs=1&pid=ImgDetMain" class="position-absolute card-icon">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section zubuz-section-padding3 bg-light position-relative">
+    <div class="container">
+      <div class="zubuz-section-title center">
+        <h2>Rational planning for rapid growth</h2>
+      </div>
+      <div class="pricing-btn">
+        <label>Billed monthly</label>
+        <div class="toggle-btn">
+          <input class="form-check-input btn-toggle price-deck-trigger" type="checkbox" id="flexSwitchCheckDefault" data-pricing-trigger data-target="#table-price-value" checked>
+        </div>
+        <label>Billed annually</label>
+      </div>
+      <div class="row" id="table-price-value" data-pricing-dynamic data-value-active="monthly">
+        <div class="col-xl-4 col-md-6">
+          <div class="zubuz-pricing-wrap">
+            <div class="zubuz-pricing-header">
+              <h5>Basic</h5>
+            </div>
+            <div class="zubuz-pricing-price">
+              <h2>$</h2>
+              <div class="zubuz-price dynamic-value" data-active="19" data-monthly="19" data-yearly="39"></div>
+              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+            </div>
+            <div class="zubuz-pricing-description">
+              <p>Works perfect for small teams</p>
+            </div>
+            <div class="zubuz-pricing-body">
+              <ul>
+                <li><img src="assets/images/v2/check2.png" alt="">Live chat widget for website</li>
+                <li><img src="assets/images/v2/check2.png" alt="">All basic CRM features</li>
+                <li><img src="assets/images/v2/check2.png" alt="">Up to 5,000 contacts</li>
+                <li><img src="assets/images/v2/check2.png" alt="">Flow base chatbot</li>
+                <li><img src="assets/images/v2/check2.png" alt="">24/7 Email Support</li>
+              </ul>
+            </div>
+            <a class="zubuz-pricing-btn" href="pricing.html">Select the plan</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="zubuz-pricing-wrap active">
+            <div class="zubuz-pricing-header">
+              <h5>Standard</h5>
+            </div>
+            <div class="zubuz-pricing-price">
+              <h2>$</h2>
+              <div class="zubuz-price dynamic-value" data-active="49" data-monthly="49" data-yearly="69"></div>
+              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+            </div>
+            <div class="zubuz-pricing-description">
+              <p>Great for small and medium teams</p>
+            </div>
+            <div class="zubuz-pricing-body">
+              <ul>
+                <li><img src="assets/images/v2/check2.png" alt="">All multimedia channels</li>
+                <li><img src="assets/images/v2/check2.png" alt="">All advanced CRM features</li>
+                <li><img src="assets/images/v2/check2.png" alt="">Up to 15,000 contacts</li>
+                <li><img src="assets/images/v2/check2.png" alt="">Flow + AI base chatbot</li>
+                <li><img src="assets/images/v2/check2.png" alt="">24/7 Support (Live, Email, Chat)</li>
+              </ul>
+            </div>
+            <a class="zubuz-pricing-btn active" href="pricing.html">Select the plan</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <div class="zubuz-pricing-wrap">
+            <div class="zubuz-pricing-header">
+              <h5>Enterprise</h5>
+            </div>
+            <div class="zubuz-pricing-price">
+              <h2>$</h2>
+              <div class="zubuz-price dynamic-value" data-active="89" data-monthly="89" data-yearly="99"></div>
+              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+            </div>
+            <div class="zubuz-pricing-description">
+              <p>Great for large teams</p>
+            </div>
+            <div class="zubuz-pricing-body">
+              <ul>
+                <li><img src="assets/images/v2/check2.png" alt="">All multimedia channels</li>
+                <li><img src="assets/images/v2/check2.png" alt="">All enterprise CRM features</li>
+                <li><img src="assets/images/v2/check2.png" alt="">Up to 25,000 contacts</li>
+                <li><img src="assets/images/v2/check2.png" alt="">Flow + AI base chatbot</li>
+                <li><img src="assets/images/v2/check2.png" alt="">24/7 Support (Live, Email, Chat)</li>
+              </ul>
+            </div>
+            <a class="zubuz-pricing-btn" href="pricing.html">Select the plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zubuz-pricing-shape">
+      <img src="assets/images/v2/shape4-v2.png" alt="">
+    </div>
+  </div>
+  <!-- End Section -->
+  <div class="zubuz-testimonial-slider-section zubuz-section-padding2" style="background-image: url(assets/images/v2/t-bg.png)">
+    <div class="container">
+      <div class="zubuz-testimonial-slider">
+        <div class="zubuz-testimonial-slider-item">
+          <div class="zubuz-testimonial-slider-data">
+            <h2 class="mo-h2 text-white"> Enjoy 95%+ uptime with our dedicated support team.</h2>
+            <div class="zubuz-testimonial-slider-rating my-4">
+              <ul>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+              </ul>
+            </div>
+            <p class="slider-text">Experience unparalleled support with our round-the-clock customer service offered by our support team
+              with acute knowledge of all products and services.
+            </p>
+            <p class="slider-text">
+              Rest assured, we're here for you whenever you need us, ensuring a seamless and satisfying experience every step of the way.
+            </p>
+          </div>
+        </div>
+        <div class="zubuz-testimonial-slider-item">
+          <div class="zubuz-testimonial-slider-data">
+            <h2 class="mo-h2 text-white"> Central LMS: Igniting Learning, Empowering Productivity!</h2>
+
+            <div class="zubuz-testimonial-slider-rating my-4">
+              <ul>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+              </ul>
+            </div>
+            <p class="slider-text">
+              Experience unparalleled support with our round-the-clock customer service offered by our support team
+              with acute knowledge of all products and services.
+            </p>
+            <p class="slider-text">
+              Rest assured, we're here for you whenever you need us, ensuring a seamless and satisfying experience every step of the way.
+            </p>
+          </div>
+        </div>
+        <div class="zubuz-testimonial-slider-item">
+          <div class="zubuz-testimonial-slider-data">
+            <h2 class="mo-h2 text-white"> Enjoy 95%+ uptime with our dedicated support team.</h2>
+
+            <div class="zubuz-testimonial-slider-rating my-4">
+              <ul>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+                <li><img src="assets/images/v2/rating2.png" alt=""></li>
+              </ul>
+            </div>
+            <p class="slider-text">
+              Experience unparalleled support with our round-the-clock customer service offered by our support team
+              with acute knowledge of all products and services.
+            </p>
+            <p class="slider-text">
+            Rest assured, we're here for you whenever you need us, ensuring a seamless and satisfying experience every step of the way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Section -->
+
+  <div class="zubuz-cta-section2 mt-5" style="padding-top: 120px">
+    <div class="container">
+      <div class="zubuz-cta-wrap" style="background-image: url(assets/images/v2/cta-bg.png)">
+        <div class="zubuz-cta-content">
+          <h3 style="font-size: 25px" class="text-white mb-3">Request a personalized demo of Central Management System today and discover the power of modern learning solution firsthand.</h3>
+          <div class="zubuz-subscribe-two">
+<!--              <input type="email" placeholder="Request ">-->
+<!--              <button class="zubuz-default-btn zubuz-subscription-btn two" id="zubuz-subscription-btn" type="submit">-->
+<!--                <span>Request Demo</span>-->
+<!--              </button>-->
+              <button
+                      style="background-color: #ABFB4F"
+                      class="btn btn-outline-light rounded-pill px-5 py-4 text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#signupForm"
+              >
+                <span>Request Demo</span>
+              </button>
+<!--              <button style="background-color: #ABFB4F" class="btn rounded-pill px-5 text-dark text-light btn-lg">Request Demo</button>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer class="zubuz-footer-section">
+    <div class="container">
+      <div class="zubuz-footer-top">
+        <div class="row">
+          <div class="col-xl-4 col-lg-12">
+            <div class="zubuz-footer-textarea">
+              <a href="">
+                <img src="assets/images/logo/logo-dark.png" alt="">
+              </a>
+              <p>We're your innovation partner, delivering cutting-edge solutions that elevate your business to the next level.</p>
+              <div class="zubuz-social-icon social-box">
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <div class="zubuz-footer-menu extar-margin">
+              <div class="zubuz-footer-title">
+                <p>Navigation</p>
+              </div>
+              <ul>
+                <li><a href="">Demos</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="zubuz-footer-menu">
+              <div class="zubuz-footer-title">
+                <p>Utility pages</p>
+              </div>
+              <ul>
+                <li><a href="">Instructions</a></li>
+                <li><a href="">Style guide</a></li>
+                <li><a href="">Licenses</a></li>
+                <li><a href="">404 Not found</a></li>
+                <li><a href="">Password protected</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-4">
+            <div class="zubuz-footer-menu extar-margin">
+              <div class="zubuz-footer-title">
+                <p>Resources</p>
+              </div>
+              <ul>
+                <li><a href="">Support</a></li>
+                <li><a href="">Privacy policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Strategic finance</a></li>
+                <li><a href="">Video guide</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="zubuz-footer-bottom center">
+        <div class="zubuz-copywright">
+          <p> &copy;Copyright 2024, All Rights Reserved by Mthemeus</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/faq.js"></script>
+
+  <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
