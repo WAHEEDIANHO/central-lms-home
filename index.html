@@ -54,6 +54,10 @@
       right: 0;
       transform: translate(50%, -50%);
     }
+
+    .btn:focus {
+      box-shadow: none;
+    }
   </style>
 </head>
 
@@ -158,6 +162,16 @@
           <button type="button" class="btn btn-danger btn-sm p-0" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-success btn-sm p-0">Submit</button>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="demo" data-bs-backdrop="static" tabindex="-1" aria-labelledby="demoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <video width="100%" controls>
+          <source src="./assets/video/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
@@ -403,7 +417,7 @@
 
         <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
           <div class="zubuz-header-btn-wrap">
-            <a class="zubuz-login-btn" href="sign-up.html">Login</a>
+            <a class="zubuz-login-btn" href="https://centrallms.com/public/user-login">Login</a>
           </div>
           <button
                   style="background-color: #ABFB4F"
@@ -591,15 +605,15 @@
           <div class="zubuz-testimonial-slider-data">
             <h2 class="text-white" style="font-size: 40px"> Central LMS:</h2>
             <h2 class="text-white" style="font-size: 35px">Igniting Learning, Empowering Productivity!</h2>
-            <div class="zubuz-testimonial-slider-rating my-4">
-              <ul>
-                <li><img src="assets/images/v2/rating2.png" alt=""></li>
-                <li><img src="assets/images/v2/rating2.png" alt=""></li>
-                <li><img src="assets/images/v2/rating2.png" alt=""></li>
-                <li><img src="assets/images/v2/rating2.png" alt=""></li>
-                <li><img src="assets/images/v2/rating2.png" alt=""></li>
-              </ul>
-            </div>
+            <button
+                    style="background-color: #ABFB4F"
+                    class="btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#demo"
+            >
+              <img src="assets/images/v1/play-btn.png" alt="" class="me-3">
+              Watch a Demo
+            </button>
 <!--            <p class="slider-text">Experience unparalleled support with our round-the-clock customer service offered by our support team-->
 <!--              with acute knowledge of all products and services.-->
 <!--            </p>-->
