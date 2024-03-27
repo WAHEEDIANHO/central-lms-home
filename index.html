@@ -79,12 +79,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="modal-body">
             <form>
              <div class="row">
                <div class="col-lg-12">
                  <div class="mb-3">
-                   <label for="fname" class="form-label small">Organization Name:</label>
+                   <label for="fname" class="form-label small">Full Name:</label>
                    <input type="text" class="form-control  p-2 px-4" id="fname">
                  </div>
                </div>
@@ -106,16 +105,33 @@
              <div class="row">
                <div class="col-lg-6">
                  <div class="mb-3">
-                   <label for="purpose" class="form-label small">Purpose of the demo:</label>
-                   <input type="text" class="form-control  p-2 px-4" id="purpose">
+                   <label for="company" class="form-label small">Company Name:</label>
+                   <input type="text" class="form-control  p-2 px-4" id="company">
                  </div>
                </div>
+               <div class="col-lg-6">
+                 <div class="mb-3">
+                   <label for="wemail" class="form-label small">Work Email:</label>
+                   <input type="email" class="form-control  p-2 px-4" id="wemail">
+                 </div>
+               </div>
+             </div>
+             <div class="row">
                <div class="col-lg-6">
                  <div class="mb-3">
                    <label for="prefer" class="form-label small">Preferred date:</label>
                    <input type="date" class="form-control  p-2 px-4" id="prefer">
                  </div>
                </div>
+               <div class="col-lg-6">
+                 <div class="mb-3">
+                   <label for="country" class="form-label small">Country:</label>
+                   <select name="country" class="form-select  p-2 px-4" id="country">
+                     <option value="nigeria">Nigeria</option>
+                   </select>
+                 </div>
+               </div>
+
              </div>
              <div class="">
                   <p for="duration" class="form-label small">How long would you like your demo to be?:</p>
@@ -136,12 +152,7 @@
                 <label for="specific" class="small">Any specific features or aspects you'd like to focus on during the demo</label>
                 <textarea id="specific" class="form-control" rows="2"></textarea>
               </div>
-              <div>
-                <label for="question" class="small">Any questions or concerns you have</label>
-                <textarea id="question" class="form-control" rows="2"></textarea>
-              </div>
             </form>
-          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger btn-sm p-0" data-bs-dismiss="modal">Close</button>
