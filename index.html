@@ -58,6 +58,12 @@
     .btn:focus {
       box-shadow: none;
     }
+    .close-video {
+      top: 0;
+      right: 0;
+      transform: translate(100%, -100%);
+      color: white !important;
+    }
   </style>
 </head>
 
@@ -166,8 +172,11 @@
     </div>
   </div>
   <div class="modal" id="demo" data-bs-backdrop="static" tabindex="-1" aria-labelledby="demoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
+        <div class="position-absolute end-0 translate-middle bg-white close-video rounded-circle badge p-2">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
         <video width="100%" controls>
           <source src="./assets/video/mov_bbb.mp4" type="video/mp4">
           Your browser does not support the video tag.
