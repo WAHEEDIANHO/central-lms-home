@@ -758,6 +758,25 @@
       <div class="zubuz-section-title center">
         <h2 class="display-5 fw-bold">Subscription/Plan</h2>
       </div>
+      <div class="align-content-center mb-5">
+        <div class="row">
+          <div class="col-4 offset-4">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input onclick="us_dollar()" type="radio" class="btn-check" name="btnradio" id="usd" autocomplete="off" checked>
+              <label  class="btn btn-outline-dark" for="usd">USD</label>
+
+              <input onclick="ca_dollar()" type="radio" class="btn-check" name="btnradio" id="cad" autocomplete="off">
+              <label class="btn btn-outline-dark" for="cad">CAD</label>
+
+              <input onclick="naira()" type="radio" class="btn-check" name="btnradio" id="ngn" autocomplete="off">
+              <label class="btn btn-outline-dark" for="ngn">NGN</label>
+
+              <input onclick="pounds()" type="radio" class="btn-check" name="btnradio" id="gbp" autocomplete="off">
+              <label class="btn btn-outline-dark" for="gbp">GBP</label>
+            </div>
+          </div>
+        </div>
+      </div>
 <!--      <div class="pricing-btn">-->
 <!--        <label>Billed monthly</label>-->
 <!--        <div class="toggle-btn">-->
@@ -765,19 +784,18 @@
 <!--        </div>-->
 <!--        <label>Billed annually</label>-->
 <!--      </div>-->
-      <div class="row" id="table-price-value" data-pricing-dynamic data-value-active="monthly">
+      <div class="row" id="table-price-value">
         <div class="col-xl-3 col-md-6">
           <div class="zubuz-pricing-wrap">
             <div class="zubuz-pricing-header">
               <h5>Basic</h5>
             </div>
             <div class="zubuz-pricing-price">
-              <h2>$</h2>
-              <div class="zubuz-price dynamic-value" data-active="19" data-monthly="19" data-yearly="39"></div>
-              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+              <h2 id="currency_symbol_basic">$</h2><h2 id="currency_basic_value"></h2>
+              <p class="dynamic-value"><span id="currency_name_basic">USD</span>/Billed monthly</p>
             </div>
             <div class="zubuz-pricing-description">
-              <p>Up to 10 100 users</p>
+              <p>Up to 100 users</p>
             </div>
             <div class="zubuz-pricing-body">
               <ul>
@@ -797,9 +815,8 @@
               <h5>Plus</h5>
             </div>
             <div class="zubuz-pricing-price">
-              <h2>$</h2>
-              <div class="zubuz-price dynamic-value" data-active="49" data-monthly="49" data-yearly="69"></div>
-              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+              <h2 id="currency_symbol_plus">$</h2><h2 id="currency_plus_value"></h2>
+              <p class="dynamic-value"><span id="currency_name_plus">USD</span>/Billed monthly</p>
             </div>
             <div class="zubuz-pricing-description">
               <p>Up to 500 users</p>
@@ -821,9 +838,8 @@
               <h5>Premium</h5>
             </div>
             <div class="zubuz-pricing-price">
-              <h2>$</h2>
-              <div class="zubuz-price dynamic-value" data-active="89" data-monthly="89" data-yearly="99"></div>
-              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+              <h2 id="currency_symbol_premium">$</h2><h2 id="currency_premium_value"></h2>
+              <p class="dynamic-value"><span id="currency_name_premium">USD</span>/Billed monthly</p>
             </div>
             <div class="zubuz-pricing-description">
               <p>Up to 1000 users</p>
@@ -845,9 +861,8 @@
               <h5>Enterprise</h5>
             </div>
             <div class="zubuz-pricing-price">
-              <h2>$</h2>
-              <div class="zubuz-price dynamic-value" data-active="89" data-monthly="89" data-yearly="99"></div>
-              <p class="dynamic-value" data-active="USD/Billed monthly" data-monthly="USD/Billed monthly" data-yearly="USD/Billed Yearly"></p>
+              <h2 id="currency_symbol_enterprise">$</h2><h2 id="currency_enterprise_value"></h2>
+              <p class="dynamic-value"><span id="currency_name_enterprise">USD</span>/Billed monthly</p>
             </div>
             <div class="zubuz-pricing-description">
               <p>Great for large teams</p>
@@ -1028,6 +1043,95 @@
      }else videoElement.pause()
    })
  })
+
+ const rates = ["$", "USD", "19", "29", "39", "49"];
+ document.getElementById("currency_symbol_basic").innerHTML = rates[0];
+ document.getElementById("currency_symbol_plus").innerHTML = rates[0];
+ document.getElementById("currency_symbol_premium").innerHTML = rates[0];
+ document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+
+ document.getElementById("currency_name_basic").innerHTML = rates[1];
+ document.getElementById("currency_name_plus").innerHTML = rates[1];
+ document.getElementById("currency_name_premium").innerHTML = rates[1];
+ document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+
+ document.getElementById("currency_basic_value").innerHTML = rates[2];
+ document.getElementById("currency_plus_value").innerHTML = rates[3];
+ document.getElementById("currency_premium_value").innerHTML = rates[4];
+ document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+ function us_dollar(){
+   const rates = ["$", "USD", "19", "29", "39", "49"];
+   document.getElementById("currency_symbol_basic").innerHTML = rates[0];
+   document.getElementById("currency_symbol_plus").innerHTML = rates[0];
+   document.getElementById("currency_symbol_premium").innerHTML = rates[0];
+   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+
+   document.getElementById("currency_name_basic").innerHTML = rates[1];
+   document.getElementById("currency_name_plus").innerHTML = rates[1];
+   document.getElementById("currency_name_premium").innerHTML = rates[1];
+   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+
+   document.getElementById("currency_basic_value").innerHTML = rates[2];
+   document.getElementById("currency_plus_value").innerHTML = rates[3];
+   document.getElementById("currency_premium_value").innerHTML = rates[4];
+   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+ }
+
+ function ca_dollar(){
+   const rates = ["$", "CAD", "26", "36", "46", "56"];
+   document.getElementById("currency_symbol_basic").innerHTML = rates[0];
+   document.getElementById("currency_symbol_plus").innerHTML = rates[0];
+   document.getElementById("currency_symbol_premium").innerHTML = rates[0];
+   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+
+   document.getElementById("currency_name_basic").innerHTML = rates[1];
+   document.getElementById("currency_name_plus").innerHTML = rates[1];
+   document.getElementById("currency_name_premium").innerHTML = rates[1];
+   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+
+   document.getElementById("currency_basic_value").innerHTML = rates[2];
+   console.log(rates[2]);
+   document.getElementById("currency_plus_value").innerHTML = rates[3];
+   document.getElementById("currency_premium_value").innerHTML = rates[4];
+   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+ }
+
+ function naira(){
+   const rates = ["₦", "NGN", "3,500", "5,500", "6,500", "7,500"];
+   document.getElementById("currency_symbol_basic").innerHTML = rates[0];
+   document.getElementById("currency_symbol_plus").innerHTML = rates[0];
+   document.getElementById("currency_symbol_premium").innerHTML = rates[0];
+   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+
+   document.getElementById("currency_name_basic").innerHTML = rates[1];
+   document.getElementById("currency_name_plus").innerHTML = rates[1];
+   document.getElementById("currency_name_premium").innerHTML = rates[1];
+   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+
+   document.getElementById("currency_basic_value").innerHTML = rates[2];
+   document.getElementById("currency_plus_value").innerHTML = rates[3];
+   document.getElementById("currency_premium_value").innerHTML = rates[4];
+   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+ }
+
+ function pounds(){
+   const rates = ["£", "GBP", "16", "26", "32", "48"];
+   document.getElementById("currency_symbol_basic").innerHTML = rates[0];
+   document.getElementById("currency_symbol_plus").innerHTML = rates[0];
+   document.getElementById("currency_symbol_premium").innerHTML = rates[0];
+   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+
+   document.getElementById("currency_name_basic").innerHTML = rates[1];
+   document.getElementById("currency_name_plus").innerHTML = rates[1];
+   document.getElementById("currency_name_premium").innerHTML = rates[1];
+   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+
+   document.getElementById("currency_basic_value").innerHTML = rates[2];
+   document.getElementById("currency_plus_value").innerHTML = rates[3];
+   document.getElementById("currency_premium_value").innerHTML = rates[4];
+   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+
+ }
 </script>
 </body>
 </html>
