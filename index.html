@@ -138,6 +138,13 @@
     .zubuz-section-padding2 {
       padding: 80px 0;
     }
+
+    .btn-check:active+.btn-outline-dark:focus, .btn-check:checked+.btn-outline-dark:focus,
+    .btn-outline-dark.active:focus, .btn-outline-dark.dropdown-toggle.show:focus, .btn-outline-dark:active:focus
+    input:focus
+    {
+       box-shadow: none !important;
+    }
     /*.zubuz-pricing-btn.active {*/
     /*  color: var(--white-color) !important;*/
     /*  background-color: var(--primary-color);*/
@@ -164,79 +171,76 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="signupFormLabel">Request a demo</h1>
+          <h1 class="modal-title fs-5" id="signupFormLabel">Get Started</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-            <form>
-             <div class="row">
-               <div class="col-lg-12">
-                 <div class="mb-3">
-                   <label for="fname" class="form-label small">Full Name:</label>
-                   <input type="text" class="form-control  p-2 px-4" id="fname">
-                 </div>
-               </div>
-               <div class="col-lg-6">
-                 <div class="mb-3">
-                   <label for="phoneNumber" class="form-label small">Phone Number:</label>
-                   <input type="text" class="form-control  p-2 px-4" id="phoneNumber">
-                 </div>
-               </div>
-               <div class="col-lg-6">
-                 <div class="mb-3">
-                   <label for="company" class="form-label small">Company Name:</label>
-                   <input type="text" class="form-control  p-2 px-4" id="company">
-                 </div>
-               </div>
-               <div class="col-lg-6">
-                 <div class="mb-3">
-                   <label for="wemail" class="form-label small">Work Email:</label>
-                   <input type="email" class="form-control  p-2 px-4" id="wemail">
-                 </div>
-               </div>
-               <div class="col-lg-6">
-                 <div class="mb-3">
-                   <label for="prefer" class="form-label small">Preferred date:</label>
-                   <input type="date" class="form-control  p-2 px-4" id="prefer">
-                 </div>
-               </div>
-               <div class="col-lg-6">
-                 <div class="mb-3">
-                   <label for="country" class="form-label small">Country:</label>
-                   <select name="country" class="form-select  p-2 px-4" id="country">
-                     <option value="nigeria">Nigeria</option>
-                   </select>
-                 </div>
-               </div>
-             </div>
-             <div class="">
-                  <p for="duration" class="form-label small">How long would you like your demo to be?:</p>
-                  <div>
-                    <input id="intro" type="checkbox" class="" name="duration">
-                    <label for="intro" class="small">15-Minute intro call</label>
-                  </div>
-                  <div>
-                    <input id="screenShare" type="checkbox" class="" name="duration">
-                    <label for="screenShare" class="small">30- Minute Screen Share overview</label>
-                  </div>
-                  <div>
-                    <input id="depeerDive" type="checkbox" class="" name="duration">
-                    <label for="depeerDive" class="small">45- Minute in-depth deeper dive</label>
-                  </div>
-                </div>
-              <div>
-                <label for="specific" class="small">Any specific features or aspects you'd like to focus on during the demo</label>
-                <textarea id="specific" class="form-control" rows="2"></textarea>
-              </div>
-            </form>
+        <div class="modal-body p-0">
+          <iframe src="https://form.jotform.com/241353015790552" style="width: 100%; height: calc(100vh - 150px)"></iframe>
+
+          <!--            <form>-->
+<!--             <div class="row">-->
+<!--               <div class="col-lg-12">-->
+<!--                 <div class="mb-3">-->
+<!--                   <label for="fname" class="form-label small">Full Name:</label>-->
+<!--                   <input type="text" class="form-control  p-2 px-4" id="fname">-->
+<!--                 </div>-->
+<!--               </div>-->
+<!--               <div class="col-lg-6">-->
+<!--                 <div class="mb-3">-->
+<!--                   <label for="phoneNumber" class="form-label small">Phone Number:</label>-->
+<!--                   <input type="text" class="form-control  p-2 px-4" id="phoneNumber">-->
+<!--                 </div>-->
+<!--               </div>-->
+<!--               <div class="col-lg-6">-->
+<!--                 <div class="mb-3">-->
+<!--                   <label for="company" class="form-label small">Company Name:</label>-->
+<!--                   <input type="text" class="form-control  p-2 px-4" id="company">-->
+<!--                 </div>-->
+<!--               </div>-->
+<!--               <div class="col-lg-6">-->
+<!--                 <div class="mb-3">-->
+<!--                   <label for="wemail" class="form-label small">Work Email:</label>-->
+<!--                   <input type="email" class="form-control  p-2 px-4" id="wemail">-->
+<!--                 </div>-->
+<!--               </div>-->
+<!--               <div class="col-lg-6">-->
+<!--                 <div class="mb-3">-->
+<!--                   <label for="prefer" class="form-label small">Preferred date:</label>-->
+<!--                   <input type="date" class="form-control  p-2 px-4" id="prefer">-->
+<!--                 </div>-->
+<!--               </div>-->
+<!--               <div class="col-lg-6">-->
+<!--                 <div class="mb-3">-->
+<!--                   <label for="country" class="form-label small">Country:</label>-->
+<!--                   <select name="country" class="form-select  p-2 px-4" id="country">-->
+<!--                     <option value="nigeria">Nigeria</option>-->
+<!--                   </select>-->
+<!--                 </div>-->
+<!--               </div>-->
+<!--             </div>-->
+<!--             <div class="">-->
+<!--                  <p for="duration" class="form-label small">How long would you like your demo to be?:</p>-->
+<!--                  <div>-->
+<!--                    <input id="intro" type="checkbox" class="" name="duration">-->
+<!--                    <label for="intro" class="small">15-Minute intro call</label>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <input id="screenShare" type="checkbox" class="" name="duration">-->
+<!--                    <label for="screenShare" class="small">30- Minute Screen Share overview</label>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <input id="depeerDive" type="checkbox" class="" name="duration">-->
+<!--                    <label for="depeerDive" class="small">45- Minute in-depth deeper dive</label>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              <div>-->
+<!--                <label for="specific" class="small">Any specific features or aspects you'd like to focus on during the demo</label>-->
+<!--                <textarea id="specific" class="form-control" rows="2"></textarea>-->
+<!--              </div>-->
+<!--            </form>-->
         </div>
         <div class="modal-footer">
-          <button
-                  style="background-color: #ABFB4F"
-                  class="btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"
-          >
-            Submit
-          </button>
+
         </div>
       </div>
     </div>
@@ -283,16 +287,14 @@
 
         <div class="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
           <div class="zubuz-header-btn-wrap">
-            <a class="zubuz-login-btn" href="https://centrallms.com/public/user-login">Login</a>
+            <a class="zubuz-login-btn" href="https://centrallms.com/v2/public/index">Login</a>
           </div>
-          <button
+          <a href="mailto:info@centrallms.com"
                   style="background-color: #ABFB4F"
                   class="btn btn-outline-light rounded-pill px-5 py-4 text-dark"
-                  data-bs-toggle="modal"
-                  data-bs-target="#signupForm"
           >
-            <span>Get Started</span>
-          </button>
+            <span>info@centrallms.com</span>
+          </a>
 
         </div>
         <!-- mobile menu trigger -->
@@ -320,7 +322,7 @@
                       data-bs-toggle="modal"
                       data-bs-target="#signupForm"
               >
-                <span>Sign up for free</span>
+                <span>Get Started</span>
               </button>
             </div>
           </div>
@@ -778,11 +780,11 @@
               <input onclick="us_dollar()" type="radio" class="btn-check" name="btnradio" id="usd" autocomplete="off" checked>
               <label  class="btn btn-outline-dark" for="usd">USD</label>
 
-              <input onclick="ca_dollar()" type="radio" class="btn-check" name="btnradio" id="cad" autocomplete="off">
-              <label class="btn btn-outline-dark" for="cad">CAD</label>
-
               <input onclick="naira()" type="radio" class="btn-check" name="btnradio" id="ngn" autocomplete="off">
               <label class="btn btn-outline-dark" for="ngn">NGN</label>
+
+              <input onclick="ca_dollar()" type="radio" class="btn-check" name="btnradio" id="cad" autocomplete="off">
+              <label class="btn btn-outline-dark" for="cad">CAD</label>
 
               <input onclick="pounds()" type="radio" class="btn-check" name="btnradio" id="gbp" autocomplete="off">
               <label class="btn btn-outline-dark" for="gbp">GBP</label>
@@ -872,10 +874,6 @@
           <div class="zubuz-pricing-wrap">
             <div class="zubuz-pricing-header">
               <h5>Enterprise</h5>
-            </div>
-            <div class="zubuz-pricing-price">
-              <h2 id="currency_symbol_enterprise">$</h2><h2 id="currency_enterprise_value"></h2>
-              <p class="dynamic-value"><span id="currency_name_enterprise">USD</span>/Billed monthly</p>
             </div>
             <div class="zubuz-pricing-description">
               <p>Great for large teams</p>
@@ -1065,33 +1063,33 @@
  document.getElementById("currency_symbol_basic").innerHTML = rates[0];
  document.getElementById("currency_symbol_plus").innerHTML = rates[0];
  document.getElementById("currency_symbol_premium").innerHTML = rates[0];
- document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+ // document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
 
  document.getElementById("currency_name_basic").innerHTML = rates[1];
  document.getElementById("currency_name_plus").innerHTML = rates[1];
  document.getElementById("currency_name_premium").innerHTML = rates[1];
- document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+ // document.getElementById("currency_name_enterprise").innerHTML = rates[1];
 
  document.getElementById("currency_basic_value").innerHTML = rates[2];
  document.getElementById("currency_plus_value").innerHTML = rates[3];
  document.getElementById("currency_premium_value").innerHTML = rates[4];
- document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+ // document.getElementById("currency_enterprise_value").innerHTML = rates[4];
  function us_dollar(){
    const rates = ["$", "USD", "19", "29", "39", "49"];
    document.getElementById("currency_symbol_basic").innerHTML = rates[0];
    document.getElementById("currency_symbol_plus").innerHTML = rates[0];
    document.getElementById("currency_symbol_premium").innerHTML = rates[0];
-   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+   // document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
 
    document.getElementById("currency_name_basic").innerHTML = rates[1];
    document.getElementById("currency_name_plus").innerHTML = rates[1];
    document.getElementById("currency_name_premium").innerHTML = rates[1];
-   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+   // document.getElementById("currency_name_enterprise").innerHTML = rates[1];
 
    document.getElementById("currency_basic_value").innerHTML = rates[2];
    document.getElementById("currency_plus_value").innerHTML = rates[3];
    document.getElementById("currency_premium_value").innerHTML = rates[4];
-   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+   // document.getElementById("currency_enterprise_value").innerHTML = rates[4];
  }
 
  function ca_dollar(){
@@ -1099,18 +1097,18 @@
    document.getElementById("currency_symbol_basic").innerHTML = rates[0];
    document.getElementById("currency_symbol_plus").innerHTML = rates[0];
    document.getElementById("currency_symbol_premium").innerHTML = rates[0];
-   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+   // document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
 
    document.getElementById("currency_name_basic").innerHTML = rates[1];
    document.getElementById("currency_name_plus").innerHTML = rates[1];
    document.getElementById("currency_name_premium").innerHTML = rates[1];
-   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+   // document.getElementById("currency_name_enterprise").innerHTML = rates[1];
 
    document.getElementById("currency_basic_value").innerHTML = rates[2];
    console.log(rates[2]);
    document.getElementById("currency_plus_value").innerHTML = rates[3];
    document.getElementById("currency_premium_value").innerHTML = rates[4];
-   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+   // document.getElementById("currency_enterprise_value").innerHTML = rates[4];
  }
 
  function naira(){
@@ -1118,17 +1116,17 @@
    document.getElementById("currency_symbol_basic").innerHTML = rates[0];
    document.getElementById("currency_symbol_plus").innerHTML = rates[0];
    document.getElementById("currency_symbol_premium").innerHTML = rates[0];
-   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+   // document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
 
    document.getElementById("currency_name_basic").innerHTML = rates[1];
    document.getElementById("currency_name_plus").innerHTML = rates[1];
    document.getElementById("currency_name_premium").innerHTML = rates[1];
-   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+   // document.getElementById("currency_name_enterprise").innerHTML = rates[1];
 
    document.getElementById("currency_basic_value").innerHTML = rates[2];
    document.getElementById("currency_plus_value").innerHTML = rates[3];
    document.getElementById("currency_premium_value").innerHTML = rates[4];
-   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+   // document.getElementById("currency_enterprise_value").innerHTML = rates[4];
  }
 
  function pounds(){
@@ -1136,17 +1134,17 @@
    document.getElementById("currency_symbol_basic").innerHTML = rates[0];
    document.getElementById("currency_symbol_plus").innerHTML = rates[0];
    document.getElementById("currency_symbol_premium").innerHTML = rates[0];
-   document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
+   // document.getElementById("currency_symbol_enterprise").innerHTML = rates[0];
 
    document.getElementById("currency_name_basic").innerHTML = rates[1];
    document.getElementById("currency_name_plus").innerHTML = rates[1];
    document.getElementById("currency_name_premium").innerHTML = rates[1];
-   document.getElementById("currency_name_enterprise").innerHTML = rates[1];
+   // document.getElementById("currency_name_enterprise").innerHTML = rates[1];
 
    document.getElementById("currency_basic_value").innerHTML = rates[2];
    document.getElementById("currency_plus_value").innerHTML = rates[3];
    document.getElementById("currency_premium_value").innerHTML = rates[4];
-   document.getElementById("currency_enterprise_value").innerHTML = rates[4];
+   // document.getElementById("currency_enterprise_value").innerHTML = rates[4];
 
  }
 </script>
