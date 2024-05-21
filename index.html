@@ -480,55 +480,46 @@
   </div>
   <!-- End Section -->
 
-  <div class="ignite border">
+<!--  <div class="ignite border">-->
 
-    <div class="hero__background astro-7s3rfpqm">
-      <div class="ignite-bg w-100 h-100">
+<!--    <div class="hero__background astro-7s3rfpqm">-->
+<!--      <div class="ignite-bg w-100 h-100">-->
+<!--        <video id="ignite__video" class="ignite__media astro-7s3rfpqm aspect-16/9"  playsinline="" width="16" height="9" poster="./assets/webimageasset/poster.png" style="object-fit: contain">-->
+<!--&lt;!&ndash;          <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.webm" type="video/webm">&ndash;&gt;-->
+<!--          <source src="./assets/video/clms.mp4" type="video/mp4">-->
+<!--        </video>-->
+<!--      </div>-->
+
+<!--  </div>-->
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-xl-4 text-center">
+        <h2 class="text-dark w-100 text-center mb-0 ">Central LMS:</h2>
+        <h3 class="text-dark w-100 text-center mb-0 fw-light">Igniting Learning, Empowering Productivity!</h3>
+        <button
+                style="background-color: #ABFB4F"
+                class="btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"
+                id="ignite-play"
+        >
+          <img src="assets/images/v1/play-btn.png" alt="" class="me-3">
+          <span id="ignite-play-text">Watch Demo</span>
+        </button>
+      </div>
+      <div class="col-xl-8 p-0">
         <video id="ignite__video" class="ignite__media astro-7s3rfpqm aspect-16/9"  playsinline="" width="16" height="9" poster="./assets/webimageasset/poster.png" style="object-fit: contain">
-<!--          <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.webm" type="video/webm">-->
+          <!--          <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.webm" type="video/webm">-->
           <source src="./assets/video/clms.mp4" type="video/mp4">
         </video>
-      </div>
+<!--        <div class="hero__background astro-7s3rfpqm">&ndash;&gt;-->
+<!--                <div class="w-100 h-100">-->
+<!--                 -->
+<!--                </div>-->
 
-<!--    <div class="container">-->
-<!--      <div class="zubuz-testimonial-slider">-->
-<!--        <div class="zubuz-testimonial-slider-item">-->
-<!--          <div class="zubuz-testimonial-slider-data">-->
-<!--            <h2 class="text-white" style="font-size: 40px"> Central LMS:</h2>-->
-<!--            <h2 class="text-white" style="font-size: 35px">Igniting Learning, Empowering Productivity!</h2>-->
-<!--            <button-->
-<!--                    style="background-color: #ABFB4F"-->
-<!--                    class="btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"-->
-<!--                    data-bs-toggle="modal"-->
-<!--                    data-bs-target="#demo"-->
-<!--            >-->
-<!--              <img src="assets/images/v1/play-btn.png" alt="" class="me-3">-->
-<!--              Watch a Demo-->
-<!--            </button>-->
-<!--&lt;!&ndash;            <p class="slider-text">Experience unparalleled support with our round-the-clock customer service offered by our support team&ndash;&gt;-->
-<!--&lt;!&ndash;              with acute knowledge of all products and services.&ndash;&gt;-->
-<!--&lt;!&ndash;            </p>&ndash;&gt;-->
-<!--&lt;!&ndash;            <p class="slider-text">&ndash;&gt;-->
-<!--&lt;!&ndash;              Rest assured, we're here for you whenever you need us, ensuring a seamless and satisfying experience every step of the way.&ndash;&gt;-->
-<!--&lt;!&ndash;            </p>&ndash;&gt;-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-  </div>
-    <div class="ignite__content astro-7s3rfpqm">
-      <h1 class="text-white w-100 text-center mb-0 opacity-25">Central LMS:</h1>
-      <h1 class="text-white w-100 text-center mo-h2 mb-0 opacity-25">Igniting Learning, Empowering Productivity!</h1>
-                  <button
-                          style="background-color: #ABFB4F"
-                          class="btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"
-                          id="ignite-play"
-                  >
-                    <img src="assets/images/v1/play-btn.png" alt="" class="me-3">
-                    Watch a Demo
-                  </button>
+<!--            </div>-->
+      </div>
     </div>
   </div>
+<!--  </div>-->
   <!-- End Section -->
   <div class="section zubuz-section-padding2">
     <div id="zubuz-counter1"></div>
@@ -1043,13 +1034,19 @@
   document.querySelector(".copyright").innerHTML = `&copy; ${currentYear}, All Rights Reserved by Kodek`
 
  $(document).ready(function() {
-   const videoElement = document.getElementById("ignite__video");
    const playBtn =  $("#ignite-play");
 
    playBtn.on("click", async function () {
+     const videoElement = document.getElementById("ignite__video");
+     const playBtnText = document.getElementById("ignite-play-text");
+
      if (videoElement.paused) {
-       await videoElement.play()
-     }else videoElement.pause()
+       playBtnText.innerHTML = "Pause Demo";
+       await videoElement.play();
+     }else {
+       playBtnText.innerHTML = "Watch Demo";
+       videoElement.pause();
+     }
    })
  })
 
