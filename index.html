@@ -145,6 +145,18 @@
     {
        box-shadow: none !important;
     }
+
+    #termAndCondition {
+      line-height: normal;
+    }
+
+    .term-condition {
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+
+
     /*.zubuz-pricing-btn.active {*/
     /*  color: var(--white-color) !important;*/
     /*  background-color: var(--primary-color);*/
@@ -167,94 +179,159 @@
 <!--  All modal to be display in the code-->
 
   <!-- Modal -->
-  <div class="modal" id="signupForm" data-bs-backdrop="static" tabindex="-1" aria-labelledby="signupFormLabel" aria-hidden="true">
+  <div class="modal" id="termAndCondition" data-bs-backdrop="static" tabindex="-1" aria-labelledby="termAndCondition" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="signupFormLabel">Get Started</h1>
+          <h1 class="modal-title fs-5" id="signupFormLabel">GDPR Compliance Terms and Conditions</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body p-0">
-          <iframe src="https://form.jotform.com/241353015790552" style="width: 100%; height: calc(100vh - 150px)"></iframe>
+        <div class="modal-body p-0 term-condition pb-3" style="max-height: calc(100vh - 200px)">
+          <div class="container mt-2">
+            <h5 class="mt-4">Introduction</h5>
+            <p class="f-size-16 mt-1 ms-3 mb-1">These GDPR Compliance Terms and Conditions ("Terms") govern the processing of personal data on
+              Central LMS by the General Data Protection Regulation (GDPR). By accessing or using our Service, you agree
+              to comply with these Terms.</p>
 
-          <!--            <form>-->
-<!--             <div class="row">-->
-<!--               <div class="col-lg-12">-->
-<!--                 <div class="mb-3">-->
-<!--                   <label for="fname" class="form-label small">Full Name:</label>-->
-<!--                   <input type="text" class="form-control  p-2 px-4" id="fname">-->
-<!--                 </div>-->
-<!--               </div>-->
-<!--               <div class="col-lg-6">-->
-<!--                 <div class="mb-3">-->
-<!--                   <label for="phoneNumber" class="form-label small">Phone Number:</label>-->
-<!--                   <input type="text" class="form-control  p-2 px-4" id="phoneNumber">-->
-<!--                 </div>-->
-<!--               </div>-->
-<!--               <div class="col-lg-6">-->
-<!--                 <div class="mb-3">-->
-<!--                   <label for="company" class="form-label small">Company Name:</label>-->
-<!--                   <input type="text" class="form-control  p-2 px-4" id="company">-->
-<!--                 </div>-->
-<!--               </div>-->
-<!--               <div class="col-lg-6">-->
-<!--                 <div class="mb-3">-->
-<!--                   <label for="wemail" class="form-label small">Work Email:</label>-->
-<!--                   <input type="email" class="form-control  p-2 px-4" id="wemail">-->
-<!--                 </div>-->
-<!--               </div>-->
-<!--               <div class="col-lg-6">-->
-<!--                 <div class="mb-3">-->
-<!--                   <label for="prefer" class="form-label small">Preferred date:</label>-->
-<!--                   <input type="date" class="form-control  p-2 px-4" id="prefer">-->
-<!--                 </div>-->
-<!--               </div>-->
-<!--               <div class="col-lg-6">-->
-<!--                 <div class="mb-3">-->
-<!--                   <label for="country" class="form-label small">Country:</label>-->
-<!--                   <select name="country" class="form-select  p-2 px-4" id="country">-->
-<!--                     <option value="nigeria">Nigeria</option>-->
-<!--                   </select>-->
-<!--                 </div>-->
-<!--               </div>-->
-<!--             </div>-->
-<!--             <div class="">-->
-<!--                  <p for="duration" class="form-label small">How long would you like your demo to be?:</p>-->
-<!--                  <div>-->
-<!--                    <input id="intro" type="checkbox" class="" name="duration">-->
-<!--                    <label for="intro" class="small">15-Minute intro call</label>-->
-<!--                  </div>-->
-<!--                  <div>-->
-<!--                    <input id="screenShare" type="checkbox" class="" name="duration">-->
-<!--                    <label for="screenShare" class="small">30- Minute Screen Share overview</label>-->
-<!--                  </div>-->
-<!--                  <div>-->
-<!--                    <input id="depeerDive" type="checkbox" class="" name="duration">-->
-<!--                    <label for="depeerDive" class="small">45- Minute in-depth deeper dive</label>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              <div>-->
-<!--                <label for="specific" class="small">Any specific features or aspects you'd like to focus on during the demo</label>-->
-<!--                <textarea id="specific" class="form-control" rows="2"></textarea>-->
-<!--              </div>-->
-<!--            </form>-->
+    <h5 class="mt-4">Data Controller</h5>
+    <p class="f-size-16 mt-1 ms-3">Central LMS referred to as "the Company," "We," "Us," or "Our" in this document, acts as the Data Controller under the GDPR. We are responsible for determining the purposes and means of processing Personal Data collected through the Service.</p>
+
+    <h5 class="mt-4">Lawful Basis for Processing</h5>
+    <p class="f-size-16 mt-1 ms-3 mb-1">We process Personal Data based on one or more lawful bases permitted by the GDPR, including but not limited to:</p>
+    <ul class="f-size-16 ms-4">
+        <li class="py-1">Consent: Where the data subject has given consent to the processing of their Personal Data for one or more specific purposes.</li>
+        <li class="py-1">Contractual necessity: Where processing is necessary for the performance of a contract to which the data subject is party or to take steps at the request of the data subject before entering into a contract.</li>
+        <li class="py-1">Legal obligation: Where processing is necessary for compliance with a legal obligation to which the Company is subject.</li>
+        <li class="py-1">Legitimate interests: Where processing is necessary for the legitimate interests pursued by the Company or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of Personal Data.</li>
+    </ul>
+
+    <h5 class="mt-4">Rights of Data Subjects</h5>
+    <p class="f-size-16 mt-1 ms-3 mb-1">Under the GDPR, data subjects have the following rights regarding their Data:</p>
+    <ul class="f-size-16 ms-4">
+        <li class="py-1">Right to information: Data subjects have the right to be informed about the collection and use of their Data.</li>
+        <li class="py-1">Right of access: Data subjects have the right to access their Data and receive information about how it is processed.</li>
+        <li class="py-1">Right to rectification: Data subjects have the right to request the correction of inaccurate or incomplete Personal Data.</li>
+        <li class="py-1">Right to erasure: Data subjects have the right to request the deletion or removal of their Data under certain circumstances.</li>
+        <li class="py-1">Right to restriction of processing: Data subjects have the right to limit the processing of their Data under certain conditions.</li>
+        <li class="py-1">Right to data portability: Data subjects have the right to receive their Data in a structured, commonly used, and machine-readable format and to transmit it to another controller.</li>
+        <li class="py-1">Right to object: Data subjects have the right to object to the processing of their Data in certain situations.</li>
+        <li class="py-1">Rights about automated decision-making and profiling: Data subjects have the right not to be subject to decisions based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them.</li>
+    </ul>
+
+    <h5 class="mt-4">Data Protection Officer</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company has appointed a Data Protection Officer (DPO) to oversee compliance with the GDPR and to address any questions or concerns regarding data protection practices. The DPO can be contacted at [insert contact information].</p>
+
+    <h5 class="mt-4">Data Processing Agreements</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company ensures that any third-party service providers processing Personal Data on behalf of the Company comply with the requirements of the GDPR. Data Processing Agreements are established with such service providers to ensure the lawful and secure processing of Personal Data.</p>
+
+    <h5 class="mt-4">Security Measures</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company implements appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including protection against unauthorized or unlawful processing and against accidental loss, destruction, or damage of Personal Data.</p>
+
+    <h5 class="mt-4">Data Breach Notification</h5>
+    <p class="f-size-16 mt-1 ms-3">In the event of a personal data breach, the Company will notify the appropriate supervisory authority within 72 hours of becoming aware of the breach, unless the breach is unlikely to result in a risk to the rights and freedoms of individuals.</p>
+
+    <h5 class="mt-4">International Data Transfers</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company ensures that any transfer of Personal Data outside the European Economic Area (EEA) is done in compliance with the GDPR requirements, including the use of appropriate safeguards such as Standard Contractual Clauses or Binding Corporate Rules.</p>
+
+    <h5 class="mt-4">Data Retention</h5>
+    <p class="f-size-16 mt-1 ms-3">Where consent is relied upon as the lawful basis for processing Personal Data, the Company ensures that such consent is freely given, specific, informed, and unambiguous. Data subjects have the right to withdraw consent at any time.</p>
+
+    <h5 class="mt-4">Consent</h5>
+    <p class="f-size-16 mt-1 ms-3">Personal Data will be retained only for as long as necessary to fulfill the purposes for which it was collected, including any legal, accounting, or reporting requirements. Data subjects will be informed of the retention periods applicable to their Data.</p>
+
+    <h5 class="mt-4">Updates to Privacy Policy</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company reserves the right to update or modify these GDPR Compliance Terms and Conditions at any time. Any changes will be effective immediately upon posting the revised version of the Service. Data subjects are encouraged to review these Terms periodically for any changes.</p>
+    <p class="f-size-16 mt-1 ms-3">By continuing to access or use the Service after any revisions become effective, data subjects agree to be bound by the updated Terms.</p>
+
+    <h5 class="mt-4">Contact Information</h5>
+    <p class="f-size-16 mt-1 ms-3">If you have any questions or concerns about these GDPR Compliance Terms and Conditions or our data protection practices, please contact our Data Protection Officer at [insert contact information].</p>
+
+    <h5 class="mt-4">Agreement</h5>
+    <p class="f-size-16 mt-1 ms-3">By accessing or using Central LMS, data subjects acknowledge that they have read, understood, and agreed to comply with these GDPR Compliance Terms and Conditions. Failure to comply with these Terms may result in disciplinary action, including but not limited to termination of access to the Service.</p>
+
+</div>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer border-0">
 
         </div>
       </div>
     </div>
   </div>
-  <div class="modal" id="demo" data-bs-backdrop="static" tabindex="-1" aria-labelledby="demoLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal" id="privacyPolicy" data-bs-backdrop="static" tabindex="-1" aria-labelledby="termAndCondition" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-        <div class="position-absolute end-0 translate-middle bg-white close-video rounded-circle badge p-2">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="">GDPR Compliance Privacy and Policy</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <video width="100%" controls>
-          <source src="" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="modal-body p-0 term-condition pb-3" style="max-height: calc(100vh - 200px)">
+          <div class="container mt-2">
+            <h5 class="mt-4">Introduction</h5>
+            <p class="f-size-16 mt-1 ms-3 mb-1">These GDPR Compliance Terms and Conditions ("Terms") govern the processing of personal data on
+              Central LMS by the General Data Protection Regulation (GDPR). By accessing or using our Service, you agree
+              to comply with these Terms.</p>
+
+    <h5 class="mt-4">Data Controller</h5>
+    <p class="f-size-16 mt-1 ms-3">Central LMS referred to as "the Company," "We," "Us," or "Our" in this document, acts as the Data Controller under the GDPR. We are responsible for determining the purposes and means of processing Personal Data collected through the Service.</p>
+
+    <h5 class="mt-4">Lawful Basis for Processing</h5>
+    <p class="f-size-16 mt-1 ms-3 mb-1">We process Personal Data based on one or more lawful bases permitted by the GDPR, including but not limited to:</p>
+    <ul class="f-size-16 ms-4">
+        <li class="py-1">Consent: Where the data subject has given consent to the processing of their Personal Data for one or more specific purposes.</li>
+        <li class="py-1">Contractual necessity: Where processing is necessary for the performance of a contract to which the data subject is party or to take steps at the request of the data subject before entering into a contract.</li>
+        <li class="py-1">Legal obligation: Where processing is necessary for compliance with a legal obligation to which the Company is subject.</li>
+        <li class="py-1">Legitimate interests: Where processing is necessary for the legitimate interests pursued by the Company or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of Personal Data.</li>
+    </ul>
+
+    <h5 class="mt-4">Rights of Data Subjects</h5>
+    <p class="f-size-16 mt-1 ms-3 mb-1">Under the GDPR, data subjects have the following rights regarding their Data:</p>
+    <ul class="f-size-16 ms-4">
+        <li class="py-1">Right to information: Data subjects have the right to be informed about the collection and use of their Data.</li>
+        <li class="py-1">Right of access: Data subjects have the right to access their Data and receive information about how it is processed.</li>
+        <li class="py-1">Right to rectification: Data subjects have the right to request the correction of inaccurate or incomplete Personal Data.</li>
+        <li class="py-1">Right to erasure: Data subjects have the right to request the deletion or removal of their Data under certain circumstances.</li>
+        <li class="py-1">Right to restriction of processing: Data subjects have the right to limit the processing of their Data under certain conditions.</li>
+        <li class="py-1">Right to data portability: Data subjects have the right to receive their Data in a structured, commonly used, and machine-readable format and to transmit it to another controller.</li>
+        <li class="py-1">Right to object: Data subjects have the right to object to the processing of their Data in certain situations.</li>
+        <li class="py-1">Rights about automated decision-making and profiling: Data subjects have the right not to be subject to decisions based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them.</li>
+    </ul>
+
+    <h5 class="mt-4">Data Protection Officer</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company has appointed a Data Protection Officer (DPO) to oversee compliance with the GDPR and to address any questions or concerns regarding data protection practices. The DPO can be contacted at [insert contact information].</p>
+
+    <h5 class="mt-4">Data Processing Agreements</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company ensures that any third-party service providers processing Personal Data on behalf of the Company comply with the requirements of the GDPR. Data Processing Agreements are established with such service providers to ensure the lawful and secure processing of Personal Data.</p>
+
+    <h5 class="mt-4">Security Measures</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company implements appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including protection against unauthorized or unlawful processing and against accidental loss, destruction, or damage of Personal Data.</p>
+
+    <h5 class="mt-4">Data Breach Notification</h5>
+    <p class="f-size-16 mt-1 ms-3">In the event of a personal data breach, the Company will notify the appropriate supervisory authority within 72 hours of becoming aware of the breach, unless the breach is unlikely to result in a risk to the rights and freedoms of individuals.</p>
+
+    <h5 class="mt-4">International Data Transfers</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company ensures that any transfer of Personal Data outside the European Economic Area (EEA) is done in compliance with the GDPR requirements, including the use of appropriate safeguards such as Standard Contractual Clauses or Binding Corporate Rules.</p>
+
+    <h5 class="mt-4">Data Retention</h5>
+    <p class="f-size-16 mt-1 ms-3">Where consent is relied upon as the lawful basis for processing Personal Data, the Company ensures that such consent is freely given, specific, informed, and unambiguous. Data subjects have the right to withdraw consent at any time.</p>
+
+    <h5 class="mt-4">Consent</h5>
+    <p class="f-size-16 mt-1 ms-3">Personal Data will be retained only for as long as necessary to fulfill the purposes for which it was collected, including any legal, accounting, or reporting requirements. Data subjects will be informed of the retention periods applicable to their Data.</p>
+
+    <h5 class="mt-4">Updates to Privacy Policy</h5>
+    <p class="f-size-16 mt-1 ms-3">The Company reserves the right to update or modify these GDPR Compliance Terms and Conditions at any time. Any changes will be effective immediately upon posting the revised version of the Service. Data subjects are encouraged to review these Terms periodically for any changes.</p>
+    <p class="f-size-16 mt-1 ms-3">By continuing to access or use the Service after any revisions become effective, data subjects agree to be bound by the updated Terms.</p>
+
+    <h5 class="mt-4">Contact Information</h5>
+    <p class="f-size-16 mt-1 ms-3">If you have any questions or concerns about these GDPR Compliance Terms and Conditions or our data protection practices, please contact our Data Protection Officer at [insert contact information].</p>
+
+    <h5 class="mt-4">Agreement</h5>
+    <p class="f-size-16 mt-1 ms-3">By accessing or using Central LMS, data subjects acknowledge that they have read, understood, and agreed to comply with these GDPR Compliance Terms and Conditions. Failure to comply with these Terms may result in disciplinary action, including but not limited to termination of access to the Service.</p>
+
+</div>
+        </div>
+        <div class="modal-footer border-0">
+
+        </div>
       </div>
     </div>
   </div>
@@ -291,17 +368,12 @@
           </div>
           <a href="mailto:info@centrallms.com"
                   style="background-color: #ABFB4F"
-                  class="btn btn-outline-light rounded-pill px-5 py-4 text-dark"
+                  class="btn btn-outline-light rounded-pill px-5 py-4 text-dark d-none d-md-flex"
           >
             <span>info@centrallms.com</span>
           </a>
 
         </div>
-        <!-- mobile menu trigger -->
-        <div class="mobile-menu-trigger light">
-          <span></span>
-        </div>
-        <!--/.Mobile Menu Hamburger Ends-->
       </nav>
     </div>
   </header>
@@ -737,7 +809,7 @@
                <p>Deploy Central LMS directly onto your domain using your current IT infrastructure, eliminating the need
                  for extra hardware costs.</p>
              </div>
-              <img style="z-index: 1" src="assets/webimageasset/onsight.png" class="position-absolute card-icon">
+              <img style="z-index: 1" src="assets/webimageasset/onsight.png" class="position-absolute card-icon d-none d-md-block">
             </div>
             <div class="my-5 position-relative border-0 p-5 card shadow" style="margin-bottom: 60px">
               <div style="z-index: 100" class="position-relative">
@@ -746,7 +818,7 @@
                   and dedicated URL.</p>
               </div>
 
-              <img style="z-index: 1" src="assets/webimageasset/server.png" class="position-absolute card-icon">
+              <img style="z-index: 1" src="assets/webimageasset/server.png" class="position-absolute card-icon d-none d-md-block">
 
             </div>
           </div>
@@ -764,7 +836,7 @@
       <div class="align-content-center mb-5">
         <div class="row">
           <div class="col-4 offset-4">
-            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <div class="" role="group" aria-label="Basic radio toggle button group">
               <input onclick="us_dollar()" type="radio" class="btn-check" name="btnradio" id="usd" autocomplete="off" checked>
               <label  class="btn btn-outline-dark" for="usd">USD</label>
 
@@ -899,10 +971,10 @@
 <!--                <li><img src="assets/images/v2/rating2.png" alt=""></li>-->
 <!--              </ul>-->
             </div>
-            <p class="slider-text f-size-20">Experience unparalleled support with our round-the-clock customer service offered by our support team
+            <p class="slider-text px-0 f-size-20">Experience unparalleled support with our round-the-clock customer service offered by our support team
               with acute knowledge of all products and services.
             </p>
-            <p class="slider-text f-size-20">
+            <p class="slider-text px-0 f-size-20">
               Rest assured, we're here for you whenever you need us, ensuring a seamless and satisfying experience every step of the way.
             </p>
           </div>
@@ -1000,10 +1072,10 @@
         <div>
           <ul class="footer__end-links f-size-14 nav">
             <li class="footer__end-item px-2">
-              <a href="index.html#" class="text-dark"> Terms & Conditions </a>
+              <a href="javascript:void(0)" data-bs-target="#termAndCondition" data-bs-toggle="modal" class="text-dark"> Terms & Conditions </a>
             </li>
             <li class="footer__end-item px-2">
-              <a href="index.html#" class="text-dark"> Privacy Policy </a>
+              <a href="javascript:void(0)" data-bs-target="#privacyPolicy" data-bs-toggle="modal" class="text-dark"> Privacy Policy </a>
             </li>
           </ul>
         </div>
