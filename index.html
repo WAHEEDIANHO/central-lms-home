@@ -566,15 +566,14 @@
   <div class="container-fluid">
     <div class="row align-items-center">
       <div class="col-xl-4 text-center">
-        <h2 class="text-dark w-100 text-center mb-0 ">Central LMS:</h2>
+<!--        <h2 class="text-dark w-100 text-center mb-0 ">Central LMS:</h2>-->
         <h3 class="text-dark w-100 text-center mb-0 fw-light">Igniting Learning, Empowering Productivity!</h3>
         <button
                 style="background-color: #ABFB4F"
-                class="btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"
-                id="ignite-play"
+                class="ignite-play btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3 d-none d-xl-flex mx-auto"
         >
-          <img src="assets/images/v1/play-btn.png" alt="" class="me-3">
-          <span id="ignite-play-text">Watch Demo</span>
+          <img src="assets/images/v1/play-btn.png" alt="" class="me-3 ignite-play-text">
+          <span class="ignite-play-text">Watch Demo</span>
         </button>
       </div>
       <div class="col-xl-8 p-0">
@@ -588,6 +587,15 @@
 <!--                </div>-->
 
 <!--            </div>-->
+      </div>
+      <div class="col-xl-4 text-center d-block d-xl-none">
+        <button
+                style="background-color: #ABFB4F"
+                class="ignite-play btn btn-outline-success rounded-pill px-5 py-4 text-dark my-3"
+        >
+          <img src="assets/images/v1/play-btn.png" alt="" class="me-3">
+          <span class="ignite-play-text">Watch Demo</span>
+        </button>
       </div>
     </div>
   </div>
@@ -1106,19 +1114,25 @@
   document.querySelector(".copyright").innerHTML = `&copy; ${currentYear}, All Rights Reserved by Kodek`
 
  $(document).ready(function() {
-   const playBtn =  $("#ignite-play");
+   const playBtn =  document.querySelectorAll(".ignite-play");
 
-   playBtn.on("click", async function () {
-     const videoElement = document.getElementById("ignite__video");
-     const playBtnText = document.getElementById("ignite-play-text");
+   playBtn.forEach((btn) => {
+     console.log(btn);
+     btn.addEventListener("click", async function () {
+       const videoElement = document.getElementById("ignite__video");
+       const playBtnText = document.querySelectorAll(".ignite-play-text");
 
-     if (videoElement.paused) {
-       playBtnText.innerHTML = "Pause Demo";
-       await videoElement.play();
-     }else {
-       playBtnText.innerHTML = "Watch Demo";
-       videoElement.pause();
-     }
+       if (videoElement.paused) {
+         console.log(playBtnText.length)
+         playBtnText.forEach((text) => text.innerHTML = "Pause Demo")
+         // playBtnText.innerHTML = "Pause Demo";
+         await videoElement.play();
+       }else {
+         console.log(playBtnText.length)
+         playBtnText.forEach((text) => text.innerHTML = "Watch Demo")
+         videoElement.pause();
+       }
+     })
    })
  })
 
